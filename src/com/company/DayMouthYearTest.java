@@ -47,7 +47,18 @@ class DayMouthYearTest {
         int month = 2;
         int year = 2018;
         String result = DayMouthYear.NextDay(day,month,year);
-        String expected = "1/3/2021";
+        String expected = "1/3/2018";
+        assertEquals(expected,result);
+    }
+    @Test
+    @DisplayName("case 29/2/2020")
+    void testDay29Mouth2Year2020(){
+
+        int day = 29;
+        int month = 2;
+        int year = 2020;
+        String result = DayMouthYear.NextDay(day,month,year);
+        String expected = "1/3/2020";
         assertEquals(expected,result);
     }
 }
