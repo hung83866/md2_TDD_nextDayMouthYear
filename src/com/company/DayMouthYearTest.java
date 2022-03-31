@@ -17,5 +17,16 @@ class DayMouthYearTest {
         String expected = "2/1/2021";
         assertEquals(expected,result);
     }
+    @Test
+    @DisplayName("case 31/1/2021")
+    void testDay31Mouth1Year2021(){
+
+        int day = 31;
+        int mouth = 1;
+        int year = 2021;
+        String result = DayMouthYear.NextDay(day,mouth,year);
+        String expected = "1/2/2021";
+        assertEquals(expected,result);
+    }
 
 }
