@@ -11,9 +11,9 @@ class DayMouthYearTest {
     void testDay1Mouth1Year2021(){
 
         int day = 1;
-        int mouth = 1;
+        int month = 1;
         int year = 2021;
-        String result = DayMouthYear.NextDay(day,mouth,year);
+        String result = DayMouthYear.NextDay(day,month,year);
         String expected = "2/1/2021";
         assertEquals(expected,result);
     }
@@ -22,9 +22,9 @@ class DayMouthYearTest {
     void testDay31Mouth1Year2021(){
 
         int day = 31;
-        int mouth = 1;
+        int month = 1;
         int year = 2021;
-        String result = DayMouthYear.NextDay(day,mouth,year);
+        String result = DayMouthYear.NextDay(day,month,year);
         String expected = "1/2/2021";
         assertEquals(expected,result);
     }
@@ -33,9 +33,9 @@ class DayMouthYearTest {
     void testDay30Mouth4Year2021(){
 
         int day = 30;
-        int mouth = 4;
+        int month = 4;
         int year = 2021;
-        String result = DayMouthYear.NextDay(day,mouth,year);
+        String result = DayMouthYear.NextDay(day,month,year);
         String expected = "1/5/2021";
         assertEquals(expected,result);
     }
