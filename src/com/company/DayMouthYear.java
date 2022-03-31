@@ -5,10 +5,16 @@ public class DayMouthYear {
     public static final String gachNoi = "/";
 
     static String NextDay(int day, int month, int year) {
+        int startOfYear = 0;
         int startOfMonth = 1;
         int lastOfMonth = getLastOfMonth(month,year);
-
+        int lastOfYear = 12;
         if (day == lastOfMonth) {
+            if (month==lastOfYear){
+                year++;
+                day = startOfMonth;
+                month = startOfYear;
+            }
             day = startOfMonth;
             month++;
         } else {
